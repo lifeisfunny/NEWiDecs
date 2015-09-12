@@ -1,0 +1,55 @@
+<div ng-controller="AppCtrl" class="sliderdemoBasicUsage" layout-align="center center">
+    <md-content style="margin: 16px; padding:16px">
+        <div layout="row" ng-attr-style="background: rgba({{color.red}},{{color.green}},{{color.blue}},{{(color.alpha)/100}})">
+        <h3 layout-align="center center">
+            Ikea LED Light
+        </h3>
+        <md-switch layout-align="end center" flex="37" ng-model="color.alpha" aria-label="Switch" ng-true-value="0" ng-false-value="100" class="">
+        </md-switch>
+            </div>
+        <div layout="">
+            <div flex="10" layout="" layout-align="center center">
+                <span class="md-body-2">RED</span>
+            </div>
+            <md-slider flex="" min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider" class="">
+            </md-slider>
+        </div>
+
+
+        <div layout="row">
+            <div flex="10" layout="" layout-align="center center">
+                <span class="md-body-2">GREEN</span>
+            </div>
+            <md-slider   flex="" ng-model="color.green" min="0" max="255" aria-label="green" id="green-slider" class="">
+            </md-slider>
+
+        </div>
+
+        <div layout="row">
+            <div flex="10" layout="" layout-align="center center">
+                <span class="md-body-2">BLUE</span>
+            </div>
+            <md-slider flex="" ng-model="color.blue" min="0" max="255" aria-label="blue" id="blue-slider" class="">
+            </md-slider>
+
+        </div>
+
+        <div layout="row">
+            <div flex="10" layout="" layout-align="center center">
+                <span class="md-body-2">DIMMER</span>
+            </div>
+            <md-slider flex="" ng-model="color.alpha" min="0" max="100" aria-label="alpha" id="alpha-slider" class="">
+            </md-slider>
+
+        </div>
+    </md-content>
+</div>
+
+<style scoped>
+
+    .sliderdemoBasicUsage{
+        width: 100%;
+        height: 100%;
+    }
+
+</style>

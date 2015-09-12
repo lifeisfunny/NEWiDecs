@@ -1,0 +1,19 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+    "width": 1200,
+    "height": 680,
+    "min_width": 1200,
+    "min_height": 680,
+    "max_width": 1200,
+    "max_height": 680,
+    "frame": false,
+    "toolbar": false
+  },
+  "dependencies": {
+    "mosca": "^0.31.1",
+    "mqtt": "^1.4.0"
+  }
+}
