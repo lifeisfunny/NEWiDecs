@@ -5,7 +5,6 @@ app.config(['panelsProvider', function (panelsProvider) {
         .add({
             id: 'test01',
             menuType: 'fullSetting',
-            size: '1100px',
             templateUrl: 'resources/iDecsSetting/setting.html',
             topic: '/thisDevice0',
             icon:'resources/iDecsSetting/setting.svg'
@@ -13,7 +12,6 @@ app.config(['panelsProvider', function (panelsProvider) {
         .add({
             id: 'test02',
             menuType: 'fullSetting',
-            size: '1100px',
             templateUrl: 'resources/pluginApp/SecurityPlugin/security.html',
             topic: '/thisDevice1',
             icon:'resources/pluginApp/SecurityPlugin/security.svg'
@@ -29,7 +27,6 @@ app.config(['panelsProvider', function (panelsProvider) {
         .add({
             id: 'test04',
             menuType: 'miniSetting',
-            size: '315px',
             templateUrl: 'resources/pluginApp/something2/something2.html',
             topic: '/thisDevice3',
             icon:'resources/pluginApp/something2/light2.svg'
@@ -37,7 +34,6 @@ app.config(['panelsProvider', function (panelsProvider) {
         .add({
             id: 'test05',
             menuType: 'fullSetting',
-            size: '1100px',
             templateUrl: 'resources/pluginApp/thermostat/thermostat.html',
             topic: '/thisDevice4',
             icon:'resources/pluginApp/thermostat/thermostat.svg'

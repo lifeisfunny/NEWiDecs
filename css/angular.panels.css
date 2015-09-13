@@ -87,35 +87,18 @@ html,body{
 	box-shadow:none;
 	background: rgba(0, 4, 4, 0.8);
 	display:block;
-	overflow: scroll;
+	overflow: hidden;
 	pointer-events:all;
 	position:fixed;
 	transition:.2s ease-in-out;
 	z-index:1032;
 }
 
-.panels::-webkit-scrollbar {
-	width:5px;
-}
-
-.panels::-webkit-scrollbar-thumb {
-	background-color:rgba(0,0,0,0.3);
-}
-
-.panels::-webkit-scrollbar-thumb:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-.panels::-webkit-scrollbar-track {
-	background-color:transparent;
-}
-
-
 .panels.panel-miniSetting {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
 	height: auto;
-	max-height: 100%;
+	max-height: 80%;
 }
 
 .panels.panel-miniSetting.open {
@@ -128,6 +111,7 @@ html,body{
 	height: 100%;
 	width: auto;
 	background-color: rgba(0, 0, 0, 0.6);
+	width:1100px;
 }
 
 

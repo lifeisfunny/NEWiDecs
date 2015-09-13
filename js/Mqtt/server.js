@@ -1,4 +1,4 @@
-var mosca = require('mosca');
+var mosca = require('mosca')
 
 var settings = {
     port: 1883
@@ -13,21 +13,15 @@ function setup() {
     console.log('Mosca server is up and running')
 }
 
-server.on('published', function(packet, client) {
-    console.log('Published', packet);
-    console.log('Client', client);
-});
-// fired when a client connects
+// fired whena  client is connected
 server.on('clientConnected', function(client) {
-    console.log('Client Connected:', client.id);
+    console.log('client connected', client.id);
 });
 
-// fired when a client disconnects
-server.on('clientDisconnected', function(client) {
-    console.log('Client Disconnected:', client.id);
+// fired when a message is received
+server.on('published', function(packet, client) {
+    console.log('Published : ', packet.payload.toString());
 });
-
-
 
 // fired when a client subscribes to a topic
 server.on('subscribed', function(topic, client) {
@@ -40,4 +34,8 @@ server.on('unsubscribed', function(topic, client) {
 });
 
 // fired when a client is disconnecting
+server.on('clientDisconnecting', function(client) {
+    console.log('clientDisconnecting : ', client.id);
+});
 
+// fired when a client is disconnected

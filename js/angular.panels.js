@@ -72,8 +72,6 @@
 					panelsFactory.opened = undefined;
 				},
 
-				//panel element scope
-
 				//panel style
 				style: function (panel, open) {
 					switch (panel.menuType) {
@@ -81,7 +79,7 @@
 							return "top:" + (open ? "50%;" : "100%;") ;
 
 						case "fullSetting":
-							return "left:" + (open ? "0;" : "-" + panel.size + ";") + "width:" + panel.size + "";
+							return "left:" + (open ? "0;" : "-1100px;") ;
 
 					}
 				}
